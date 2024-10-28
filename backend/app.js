@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import { dbConnection } from './database/dbConnection.js';
 import { errorMiddleware } from './error/error.js';
 
-
+import reservationRouter from './route/reservationRoute.js';
 
 const app = express();
 
@@ -24,6 +24,7 @@ app.use(cors({
 // Middleware for parsing JSON and URL-encoded data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/api/v1/reservation',reservationRouter)
 
 
 
