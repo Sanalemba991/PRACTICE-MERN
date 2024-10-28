@@ -5,6 +5,16 @@ import dotenv from 'dotenv';
 const app = express();
 dotenv.config({ path: './config/config.env' });
 
-app.use(cors()); // Don't forget to use CORS if needed
+app.use(cors({
+    origin:[process.env.FRONTEND_URL],
+    methods:["POST"],
+    credentials:true,
+})); // Don't forget to use CORS if needed
+
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
+
+
 
 export default app;
