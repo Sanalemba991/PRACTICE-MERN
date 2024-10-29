@@ -1,5 +1,5 @@
 import ErrorHandler from '../middlewares/error.js';
-import { Reservation } from "../models/reservationSchema.js";
+import { Reservation } from "../models/reservation.js";
 
 export const sendReservation = async (req, res, next) => {
     const { firstName, lastName, email, date, phone, time } = req.body;
