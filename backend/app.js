@@ -3,7 +3,6 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { dbConnection } from './database/dbConnection.js';
 import { errorMiddleware } from './error/error.js';
-
 import reservationRouter from './route/reservationRoute.js';
 
 const app = express();
@@ -16,7 +15,7 @@ dbConnection();
 
 // CORS configuration
 app.use(cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: [process.env.FRONTEND_URL], // Ensure this environment variable is set
     methods: ["POST"],
     credentials: true,
 }));
@@ -24,11 +23,11 @@ app.use(cors({
 // Middleware for parsing JSON and URL-encoded data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/api/v1/reservation',reservationRouter)
 
+// Route for reservations
+app.use('/api/v1/reservation', reservationRouter);
 
-
-dbConnection();
-app.use(errorMiddleware)
+// Use error middleware after defining routes
+app.use(errorMiddleware);
 
 export default app;

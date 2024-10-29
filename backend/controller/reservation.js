@@ -11,12 +11,13 @@ export const sendReservation = async (req, res, next) => {
 
     try {
         // Create a new reservation
-        await Reservation.create({ firstName, lastName, email, date, phone, time });
+        const reservation = await Reservation.create({ firstName, lastName, email, date, phone, time });
         
         // Respond with success
-        res.status(200).json({
+        res.status(201).json({ // Changed status code to 201 for resource creation
             success: true,
             message: "Reservation sent successfully",
+            reservation, // Optionally return the created reservation
         });
     } catch (error) {
         // Handle validation errors
