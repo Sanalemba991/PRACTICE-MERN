@@ -1,14 +1,17 @@
-import React from 'react'
+import React from 'react';
 import './App.css';
-import {BrowserRouter,Routes,Route, Router} from 'react-router-dom'
-import {Toaster} from "react-hot-toast"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
    <Router>
+    <Routes>
     <Route path="/" element={}/>
     <Route path="/" element={}/>
     <Route path="/" element={}/>
+    </Routes>
+    <Toaster/>
    </Router>
   )
 }
