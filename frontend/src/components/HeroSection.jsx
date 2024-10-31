@@ -15,12 +15,20 @@ function HeroSection() {
             <div className="textAndLogo">
                 <div className="textWithSvg">
                     <h1 className="title">Food</h1>
-                    <h1 className="title dishes_title">Food</h1>
+                    <h1 className="title dishes_title">Dishes</h1>
+
+                    <img src="/threelines.svg"alt="logo" className="logo"/>
                 </div>
             </div>
           </div>
         </div>
-        <div className="banner"></div>
+        <div className="banner">
+          <div className="imageBox">
+
+            <img src="/hero2.png" alt="hero2"></img>
+          </div>
+          <h1>Titel</h1>
+        </div>
       </div>
     </section>
   );
