@@ -96,7 +96,7 @@ catch(error){
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
-              <button type="submit" onClick={handleReservation}>
+              <button type="submit" onClick={handleSubmit}>
                 RESERVE NOW{" "}
                 <span>
                   <HiOutlineArrowNarrowRight />
