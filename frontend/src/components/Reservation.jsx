@@ -19,12 +19,7 @@ function Reservation() {
     try {
       const { data } = await axios.post("http://localhost:5000/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          withCredentials: true,
-        }
+     
       );
       toast.success(data.message);
       setFirstName("");
