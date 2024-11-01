@@ -21,7 +21,14 @@ const WhoAreWe = () => {
             <img className="gradient_bg" src="center.svg" alt="gradientBg" />
             <img src="whoweare.png" alt="food" />
           </div>
-          
+          <div className="text_banner">
+            {data[0].who_we_are.slice(2).map((element) => (
+              <div className="card" key={element.id}>
+                <h1 className="heading" style={{ fontWeight: "300" }}>
+                  {element.number}
+                </h1>
+                <p>{element.title}</p>
+              </div>
             ))}
           </div>
         </div>
