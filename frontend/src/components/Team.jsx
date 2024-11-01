@@ -2,9 +2,10 @@ import React from 'react'
 
 function Team() {
   return (
-    <div>
-      
-    </div>
+    <section className='team' id="team">
+
+    </section>
+ 
   )
 }
 
