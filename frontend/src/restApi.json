@@ -70,32 +70,33 @@
                 "category": "Dinner"
             }
         ],
-        "team": [
-            {
-                "id": 1,
-                "image": "./team_member_1.png",
-                "name": "JOHNATHAN TYLER",
-                "designation": "Founder & Head Chef"
-            },
-            {
-                "id": 2,
-                "image": "./team_member_2.png",
-                "name": "WADE WARREN",
-                "designation": "Sous Chef"
-            },
-            {
-                "id": 3,
-                "image": "./team_member_3.png",
-                "name": "JHON DOE",
-                "designation": "Fast Food Chef"
-            },
-            {
-                "id": 4,
-                "image": "./team_member_4.png",
-                "name": "ALEX COAL",
-                "designation": "Senior Chef"
-            }
-        ],
+      "team": [
+    {
+        "id": 1,
+        "image": "./team_member_1.png",
+        "name": "LAITONJAM SANALEMBA MEITEI",
+        "designation": "Founder & Head Chef"
+    },
+    {
+        "id": 2,
+        "image": "./team_member_2.png", 
+        "name": "THOKCHOM PURNACHANDRA",
+        "designation": "Sous Chef"
+    },
+    {
+        "id": 3,
+        "image": "./team_member_3.png",
+        "name": "KELIFIN MOIRANGTHEM",
+        "designation": "Fast Food Chef"
+    },
+    {
+        "id": 4,
+        "image": "./team_member_4.png",
+        "name": "NINGTHOUJAM BAKTARAJ",
+        "designation": "Senior Chef"
+    }
+],
+
         "testimonials": [
             {
                 "id": 1,
