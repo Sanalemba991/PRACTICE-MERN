@@ -9,7 +9,7 @@ const Qualities = () => {
               data[0].ourQualities.map(element=>{
                 return(
                   <div className='card' key={element.id}>
-                      <img src={elment.image} alt={element.title} />
+                      <img src={element.image} alt={element.title} />
                       
                      
                   </div>
